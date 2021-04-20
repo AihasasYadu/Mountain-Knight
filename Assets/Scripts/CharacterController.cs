@@ -22,6 +22,7 @@ public class CharacterController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.sleepThreshold = 0;
     }
 
     private void FixedUpdate()

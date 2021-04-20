@@ -12,6 +12,8 @@ public class HealthController : MonoBehaviour
     private Color auraColor;
     private float timer;
 
+    public int DamagePlayerHealthBy { set { DamageDealt(value); } }
+
     private void Awake()
     {
         character = GetComponent<CharacterController>();
@@ -21,6 +23,11 @@ public class HealthController : MonoBehaviour
     private void Update()
     {
         UpdateHealth();
+    }
+
+    private void DamageDealt(int damage)
+    {
+        health -= damage;
     }
 
     private void UpdateHealth()
