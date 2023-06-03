@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BossBlink
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: model01
+    m_Weight: 0
+  - m_Path: model01/boss_body
+    m_Weight: 0
+  - m_Path: model01/boss_brow_lf
+    m_Weight: 0
+  - m_Path: model01/boss_brow_mid
+    m_Weight: 0
+  - m_Path: model01/boss_brow_rt
+    m_Weight: 0
+  - m_Path: model01/boss_eye
+    m_Weight: 0
+  - m_Path: model01/boss_eye_spec_layer
+    m_Weight: 0
+  - m_Path: model01/boss_eyelid
+    m_Weight: 0
+  - m_Path: model01/boss_eyelid_lower
+    m_Weight: 0
+  - m_Path: model01/boss_teeth_lower
+    m_Weight: 0
+  - m_Path: model01/boss_teeth_upper
+    m_Weight: 0
+  - m_Path: model01/boss_tree_a
+    m_Weight: 0
+  - m_Path: model01/boss_tree_b
+    m_Weight: 0
+  - m_Path: model01/boss_tree_c
+    m_Weight: 0
+  - m_Path: model01/boss_tree_d
+    m_Weight: 0
+  - m_Path: root01
+    m_Weight: 0
+  - m_Path: root01/bind_root01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_eye01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_eye01/joint6
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_eyeSpec01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_eyeSpec01/be_eyeSpec01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_jaw01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_jaw01/be_jaw01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_brow01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_brow01/be_l_brow01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_forarmTwist_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_forarmTwist_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_index_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_index_a01/bind_l_index_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_index_a01/bind_l_index_b01/bind_l_index_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_index_a01/bind_l_index_b01/bind_l_index_c01/bind_l_index_d01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_mid_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_mid_a01/bind_l_mid_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_mid_a01/bind_l_mid_b01/bind_l_mid_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_mid_a01/bind_l_mid_b01/bind_l_mid_c01/be_l_mid_d01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_pinky_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_pinky_a01/bind_l_pinky_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_pinky_a01/bind_l_pinky_b01/bind_l_pinky_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_pinky_a01/bind_l_pinky_b01/bind_l_pinky_c01/be_l_pinky_d01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_thumb_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_thumb_a01/bind_l_thumb_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/bind_l_wrist01/be_l_wrist01/bind_l_thumb_a01/bind_l_thumb_b01/be_l_thumb_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_shoulder01/bind_l_forearm01/jnt_l_forarmTwist_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_thigh01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_thigh01/bind_l_shin01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_thigh01/bind_l_shin01/bind_l_ankle01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_l_thigh01/bind_l_shin01/bind_l_ankle01/be_l_ankle01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_lowerLid01
+    m_Weight: 1
+  - m_Path: root01/bind_root01/bind_lowerLid01/be_lowerLid01
+    m_Weight: 1
+  - m_Path: root01/bind_root01/bind_mid_brow01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_mid_brow01/be_mid_brow01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_brow01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_brow01/be_r_brow01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_forarmTwist_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_forarmTwist_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_index_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_index_a01/bind_r_index_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_index_a01/bind_r_index_b01/bind_r_index_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_index_a01/bind_r_index_b01/bind_r_index_c01/bind_r_index_d01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_mid_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_mid_a01/bind_r_mid_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_mid_a01/bind_r_mid_b01/bind_r_mid_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_mid_a01/bind_r_mid_b01/bind_r_mid_c01/be_r_mid_d01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_pinky_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_pinky_a01/bind_r_pinky_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_pinky_a01/bind_r_pinky_b01/bind_r_pinky_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_pinky_a01/bind_r_pinky_b01/bind_r_pinky_c01/be_r_pinky_d01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_thumb_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_thumb_a01/bind_r_thumb_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/bind_r_wrist01/be_r_wrist01/bind_r_thumb_a01/bind_r_thumb_b01/be_r_thumb_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_shoulder01/bind_r_forearm01/jnt_r_forarmTwist_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_thigh01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_thigh01/bind_r_shin01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_thigh01/bind_r_shin01/locDrv_r_leg01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_r_thigh01/bind_r_shin01/locDrv_r_leg01/be_r_ankle01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_a_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_a_a01/bind_tree_a_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_a_a01/bind_tree_a_b01/be_tree_a_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_b_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_b_a01/bind_tree_b_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_b_a01/bind_tree_b_b01/be_tree_b_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_c_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_c_a01/bind_tree_c_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_c_a01/bind_tree_c_b01/be_tree_c_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_d_a01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_d_a01/bind_tree_d_b01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_tree_d_a01/bind_tree_d_b01/be_tree_d_c01
+    m_Weight: 0
+  - m_Path: root01/bind_root01/bind_upperLid01
+    m_Weight: 1
+  - m_Path: root01/bind_root01/bind_upperLid01/be_upperLid01
+    m_Weight: 1
+  - m_Path: root01/bind_root01/joint2
+    m_Weight: 0
