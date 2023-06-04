@@ -4,20 +4,48 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    [SerializeField] private float maxSpeed = 6;
-    [SerializeField] private bool facingRight = true;
-    [SerializeField] private float moveDirection = 1;
-    [SerializeField] private float jumpSpeed = 300;
-    [SerializeField] private bool doubleJumped = false;
-    [SerializeField] private bool isGrounded = false;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundRadius = 0.22f;
-    [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private float swordAttackSpeed = 600;
-    [SerializeField] private Transform swordSpawn;
-    [SerializeField] private Rigidbody swordPrefab;
-    private Rigidbody swordClone;
-    private Rigidbody rb;
+    [SerializeField] 
+    private float maxSpeed = 6;
+
+    [SerializeField] 
+    private bool facingRight = true;
+
+    [SerializeField] 
+    private float moveDirection = 1;
+
+    [SerializeField] 
+    private float jumpSpeed = 300;
+
+    [SerializeField] 
+    private bool doubleJumped = false;
+
+    [SerializeField] 
+    private bool isGrounded = false;
+
+    [SerializeField] 
+    private Transform groundCheck;
+
+    [SerializeField] 
+    private float groundRadius = 0.22f;
+
+    [SerializeField] 
+    private LayerMask whatIsGround;
+
+    [SerializeField] 
+    private float swordAttackSpeed = 600;
+
+    [SerializeField] 
+    private Transform swordSpawn = null;
+
+    [SerializeField] 
+    private Rigidbody swordPrefab = null;
+
+    [SerializeField]
+    private Animator anim = null;
+
+    private Rigidbody swordClone = null;
+    
+    private Rigidbody rb = null;
 
     private void Start()
     {
@@ -33,8 +61,16 @@ public class CharacterController : MonoBehaviour
     private void Update()
     {
         SetDirection();
-        Jump();
-        Attack();
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
+
+        if(Input.GetButtonDown("Fire1"))
+        {
+            Attack();
+        }
     }
 
     private void SetDirection()
@@ -45,11 +81,14 @@ public class CharacterController : MonoBehaviour
     private void Movement()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        rb.velocity = new Vector2(moveDirection * maxSpeed, rb.velocity.y);
+        anim.SetFloat ( "speed", Mathf.Abs(moveDirection) );
+        anim.SetFloat ( "vSpeed", rb.velocity.y );
+        anim.SetBool ( "isGrounded", isGrounded );
         if(isGrounded)
         {
             doubleJumped = false;
         }
-        rb.velocity = new Vector2(moveDirection * maxSpeed, rb.velocity.y);
         if(moveDirection > 0.0f && !facingRight)
         {
             Flip();
@@ -64,11 +103,12 @@ public class CharacterController : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(Vector3.up, 180.0f, Space.World);
+        anim.SetBool ( "facingRight", facingRight );
     }
 
     private void Jump()
     {
-        if((isGrounded || !doubleJumped) && Input.GetButtonDown("Jump"))
+        if((isGrounded || !doubleJumped))
         {
             rb.AddForce(new Vector2(0, jumpSpeed));
             if(!doubleJumped && !isGrounded)
@@ -80,10 +120,12 @@ public class CharacterController : MonoBehaviour
 
     private void Attack()
     {
-        if(Input.GetButtonDown("Fire1"))
-        {
-            swordClone = Instantiate(swordPrefab, swordSpawn.position, swordSpawn.rotation) as Rigidbody;
-            swordClone.AddForce(swordSpawn.transform.right * swordAttackSpeed);
-        }
+        anim.SetTrigger ( "attacking" );
+    }
+
+    public void FireProjectile ()
+    {
+        swordClone = Instantiate(swordPrefab, swordSpawn.position, swordSpawn.rotation) as Rigidbody;
+        swordClone.AddForce(swordSpawn.transform.right * swordAttackSpeed);
     }
 }

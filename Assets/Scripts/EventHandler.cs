@@ -23,4 +23,9 @@ public class EventHandler : MonoBehaviour
         EnableCharMovement();
         bossCtrlr.SetBattling = true;
     }
+
+    public void CallFireProjectile ()
+    {
+        charCtrlr.FireProjectile ();
+    }
 }

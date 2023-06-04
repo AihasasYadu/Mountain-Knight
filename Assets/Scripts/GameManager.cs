@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoSingletonGeneric<GameManager>
 {
-    [SerializeField] private BossController bossCtrlr;
-    [SerializeField] private CharacterController charCtrlr;
-
+    [SerializeField] 
+    private BossController bossCtrlr;
     public BossController GetBossController { get { return bossCtrlr; } }
+
+    [SerializeField] 
+    private CharacterController charCtrlr;
     public CharacterController GetCharacterController { get { return charCtrlr; } }
 }
