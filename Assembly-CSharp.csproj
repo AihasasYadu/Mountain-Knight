@@ -743,14 +743,14 @@
       <Name>Unity.Burst.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="Unity.2D.IK.Editor.csproj">
+      <Project>{a4118cbe-f583-b999-1f13-1bca1eeee1a1}</Project>
+      <Name>Unity.2D.IK.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
       <Project>{311dc24c-92bf-0a37-0fd7-b160ef422ae0}</Project>
       <Name>Unity.2D.Sprite.Editor</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
-      <Project>{09ce8b16-6333-24f2-a419-af1b9f34e913}</Project>
-      <Name>Unity.2D.Psdimporter.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Path.Editor.csproj">
@@ -758,9 +758,9 @@
       <Name>Unity.2D.Path.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{3a8b12aa-a6aa-783f-bff4-4371ca500d57}</Project>
-      <Name>Unity.InternalAPIEditorBridge.001</Name>
+    <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
+      <Project>{09ce8b16-6333-24f2-a419-af1b9f34e913}</Project>
+      <Name>Unity.2D.Psdimporter.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
@@ -773,6 +773,11 @@
       <Name>Unity.Rider.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
+      <Project>{3a8b12aa-a6aa-783f-bff4-4371ca500d57}</Project>
+      <Name>Unity.InternalAPIEditorBridge.001</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{cf09d51e-d071-c611-20f7-2b78524ba568}</Project>
       <Name>UnityEngine.UI</Name>
@@ -781,6 +786,11 @@
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{0946bd54-53a1-ffa8-c424-f89a676b4050}</Project>
       <Name>Unity.Mathematics</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
+      <Project>{76fe07f1-0e2c-4f6e-fbac-70bdbbbdc123}</Project>
+      <Name>Unity.2D.IK.Runtime</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.csproj">
@@ -826,16 +836,6 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{dffd7d5f-c61b-26ce-ffd8-2dfd56a136a7}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.IK.Editor.csproj">
-      <Project>{a4118cbe-f583-b999-1f13-1bca1eeee1a1}</Project>
-      <Name>Unity.2D.IK.Editor</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
-      <Project>{76fe07f1-0e2c-4f6e-fbac-70bdbbbdc123}</Project>
-      <Name>Unity.2D.IK.Runtime</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
