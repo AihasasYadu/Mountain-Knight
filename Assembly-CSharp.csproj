@@ -47,6 +47,10 @@
      <Compile Include="Assets\Scripts\HealthController.cs" />
      <Compile Include="Assets\Scripts\BossController.cs" />
      <Compile Include="Assets\Scripts\HandTriggersController.cs" />
+     <Compile Include="Assets\Scripts\CliffController.cs" />
+     <Compile Include="Assets\Scripts\Enums\BossStateEnum.cs" />
+     <Compile Include="Assets\Scripts\Enums\BossHealthEnum.cs" />
+     <Compile Include="Assets\Scripts\FollowTarget.cs" />
      <None Include="Assets\Shaders\Toon_Transparent.shader" />
      <None Include="Assets\Shaders\Toon.shader" />
      <None Include="Assets\Shaders\Toon_Ghost.shader" />
