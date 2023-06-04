@@ -30,7 +30,7 @@ public class CharacterController : MonoBehaviour
     private float groundRadius = 0.22f;
 
     [SerializeField] 
-    private LayerMask whatIsGround;
+    private LayerMask whatIsGround = default(LayerMask);
 
     [SerializeField] 
     private float swordAttackSpeed = 600;

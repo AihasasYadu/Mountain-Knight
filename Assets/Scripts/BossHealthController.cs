@@ -7,8 +7,8 @@ public class BossHealthController : MonoBehaviour
 {
     [SerializeField] private int health = 100;
     private BossController bossCtrlr;
-    public int DamageBoss { set { UpdateHealth(value); } }
     public int GetBossHealth { get { return health; } }
+
 
     private void Start()
     {
@@ -17,11 +17,12 @@ public class BossHealthController : MonoBehaviour
 
     private void BossDeath()
     {
-        StartCoroutine(LevelRestart());
+        GameManager.Instance.BattleOver ();
     }
 
-    private void UpdateHealth(int damage)
+    public void DamageBoss(int damage)
     {
+        BossHealthEnum bossHealthEnum = BossHealthEnum.FullStrength;
         health -= damage;
         Debug.Log("Health" + health);
         if(health <= 0)
@@ -29,11 +30,25 @@ public class BossHealthController : MonoBehaviour
             health = 0;
             BossDeath();
         }
-    }
 
-    private IEnumerator LevelRestart()
-    {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if ( health > 75 && health <= 100 )
+        {
+            bossHealthEnum = BossHealthEnum.FullStrength;
+        }
+        else if ( health > 50 && health <= 75 )
+        {
+            bossHealthEnum = BossHealthEnum.Scratched;
+        }
+        else if ( health > 25 && health <= 50 )
+        {
+            bossHealthEnum = BossHealthEnum.Weak;
+        }
+        else if ( health > 0 && health <= 25 )
+        {
+            bossHealthEnum = BossHealthEnum.Critical;
+        }
+
+        bossCtrlr.UpdateHealthEnum ( bossHealthEnum );
+        bossCtrlr.IsHit ();
     }
 }

@@ -53,6 +53,7 @@ public class HealthController : MonoBehaviour
         }
         if(health <= 0)
         {
+            GameManager.Instance.BattleOver();
             if ( !isPlayerDead )
             {
                 playerDying ();
@@ -86,5 +87,6 @@ public class HealthController : MonoBehaviour
 
         character.CharacterAnim.SetFloat ( "speed", 0.0f );
         character.enabled = false;
+        GameManager.Instance.GameOver ();
     }
 }

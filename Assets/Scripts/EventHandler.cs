@@ -18,10 +18,12 @@ public class EventHandler : MonoBehaviour
         charCtrlr.enabled = true;
     }
 
-    public void EnableBossBattle()
+    public void InitiateBossBattle()
     {
         EnableCharMovement();
+        GameManager.Instance.IsBattleActive = true;
         bossCtrlr.SetBattling = true;
+        bossCtrlr.InitateBossAttack ();
     }
 
     public void FireProjectile ()
@@ -32,5 +34,10 @@ public class EventHandler : MonoBehaviour
     public void FallApart ()
     {
         charCtrlr.FallApartCharacter ();
+    }
+
+    public void UpdateBossAttackCount ()
+    {
+        bossCtrlr.AttackCompleted ();
     }
 }

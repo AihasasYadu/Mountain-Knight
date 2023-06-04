@@ -18,7 +18,7 @@ public class SwordAttackController : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<BossHealthController>() && collision.gameObject.GetComponent<BossHealthController>().GetBossHealth > 0)
             {
-                collision.gameObject.GetComponent<BossHealthController>().DamageBoss = attackPower;
+                collision.gameObject.GetComponent<BossHealthController>().DamageBoss (attackPower);
                 Destroy(gameObject);
             }
         }

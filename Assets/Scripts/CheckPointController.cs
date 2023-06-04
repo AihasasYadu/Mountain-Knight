@@ -18,7 +18,8 @@ public class CheckPointController : MonoBehaviour
         if(other.gameObject.layer.Equals(PLAYER_LAYER))
         {
             GetComponent<Collider>().isTrigger = false;
-            bossCtrlr.SetBossAwake = true;
+            bossCtrlr.WakeUp ();
+            charMovement.CharacterAnim.SetFloat ( "speed", 0.0f );
             charMovement.enabled = false;
         }
     }
