@@ -2084,8 +2084,7 @@ MonoBehaviour:
     m_Bits: 256
   swordAttackSpeed: 600
   swordSpawn: {fileID: 664455755}
-  swordPrefab: {fileID: 4413008271201326544, guid: a19e7c2d40e9bf24db79f7bbfa1c29eb,
-    type: 3}
+  swordPrefab: {fileID: 5400000, guid: 92590d53a5a73ab4cb273dcaea674d08, type: 3}
   anim: {fileID: 852437241}
 --- !u!199 &2017148111
 ParticleSystemRenderer:
