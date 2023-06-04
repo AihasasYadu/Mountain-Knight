@@ -24,8 +24,13 @@ public class EventHandler : MonoBehaviour
         bossCtrlr.SetBattling = true;
     }
 
-    public void CallFireProjectile ()
+    public void FireProjectile ()
     {
         charCtrlr.FireProjectile ();
+    }
+
+    public void FallApart ()
+    {
+        charCtrlr.FallApartCharacter ();
     }
 }

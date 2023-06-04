@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] private int health;
-    [SerializeField] private ParticleSystemRenderer aura;
+    [SerializeField] 
+    private int health = 0;
 
-    private CharacterController character;
-    private Color auraColor;
-    private float timer;
+    [SerializeField] 
+    private ParticleSystemRenderer aura = null;
+
+    private CharacterController character = null;
+    private Color auraColor = Color.green;
+    private float timer = 0.0f;
+    private bool isPlayerDead = false;
 
     public int DamagePlayerHealthBy { set { DamageDealt(value); } }
 
@@ -22,7 +26,7 @@ public class HealthController : MonoBehaviour
 
     private void Update()
     {
-        UpdateHealth();
+        updateHealth();
     }
 
     private void DamageDealt(int damage)
@@ -30,7 +34,7 @@ public class HealthController : MonoBehaviour
         health -= damage;
     }
 
-    private void UpdateHealth()
+    private void updateHealth()
     {
         if(health == 3)
         {
@@ -47,16 +51,40 @@ public class HealthController : MonoBehaviour
             auraColor = Color.red;
             aura.material.color = auraColor;
         }
-        if(health == 0)
+        if(health <= 0)
         {
-            character.enabled = false;
-            StartCoroutine(LevelReset());
+            if ( !isPlayerDead )
+            {
+                playerDying ();
+            }
+            else
+            {
+                playerDead ();
+                StartCoroutine(levelReset());
+            }
         }
     }
 
-    private IEnumerator LevelReset()
+    private IEnumerator levelReset()
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void playerDying ()
+    {
+        isPlayerDead = true;
+        character.CharacterAnim.SetBool ( "isDead", true );
+    }
+
+    private void playerDead ()
+    {
+        if ( character.CharacterAnim.GetCurrentAnimatorStateInfo (0).IsName ( "Knight_Death_01_F" ) )
+        {
+            character.CharacterAnim.SetBool ( "isDead", false );
+        }
+
+        character.CharacterAnim.SetFloat ( "speed", 0.0f );
+        character.enabled = false;
     }
 }

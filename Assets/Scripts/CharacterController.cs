@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -42,15 +43,28 @@ public class CharacterController : MonoBehaviour
 
     [SerializeField]
     private Animator anim = null;
+    public Animator CharacterAnim => anim;
+
+    [SerializeField] 
+    private GameObject deadCharPrefab = null;
+
+    [SerializeField]
+    private Animator deadAnim = null;
+    public Animator DeadAnim => deadAnim;
 
     private Rigidbody swordClone = null;
+
+    private GameObject deadCharClone = null;
     
     private Rigidbody rb = null;
+
+    private List<Renderer> renderers = null;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.sleepThreshold = 0;
+        renderers = GetComponentsInChildren<Renderer>().ToList();
     }
 
     private void FixedUpdate()
@@ -127,5 +141,14 @@ public class CharacterController : MonoBehaviour
     {
         swordClone = Instantiate(swordPrefab, swordSpawn.position, swordSpawn.rotation) as Rigidbody;
         swordClone.AddForce(swordSpawn.transform.right * swordAttackSpeed);
+    }
+
+    public void FallApartCharacter ()
+    {
+        deadCharClone = Instantiate ( deadCharPrefab, transform.position, transform.rotation );
+        for ( int i = 0 ; i < renderers.Count ; i++ )
+        {
+            renderers [i].enabled = false;
+        }
     }
 }

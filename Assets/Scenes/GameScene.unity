@@ -841,7 +841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 20bd262822f3b11418c23086595f7f13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.553
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 20bd262822f3b11418c23086595f7f13, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1273,7 +1273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229855320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.623, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2023,7 +2023,7 @@ CapsuleCollider:
   m_Radius: 0.30047125
   m_Height: 1.2076533
   m_Direction: 1
-  m_Center: {x: 0, y: -0.0030115843, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!54 &2017148108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2086,6 +2086,8 @@ MonoBehaviour:
   swordSpawn: {fileID: 664455755}
   swordPrefab: {fileID: 5400000, guid: 92590d53a5a73ab4cb273dcaea674d08, type: 3}
   anim: {fileID: 852437241}
+  deadCharPrefab: {fileID: 100028, guid: c77a24eb17d99c54ba16b5f0fff61469, type: 3}
+  deadAnim: {fileID: 0}
 --- !u!199 &2017148111
 ParticleSystemRenderer:
   serializedVersion: 6
